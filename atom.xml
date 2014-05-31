@@ -4,7 +4,7 @@
   <title><![CDATA[Test]]></title>
   <link href="http://qgrosperrin.github.io/atom.xml" rel="self"/>
   <link href="http://qgrosperrin.github.io/"/>
-  <updated>2014-05-31T15:06:09+01:00</updated>
+  <updated>2014-05-31T15:08:06+01:00</updated>
   <id>http://qgrosperrin.github.io/</id>
   <author>
     <name><![CDATA[qgrosperrin]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://qgrosperrin.github.io/blog/2014/05/31/test/"/>
-    <updated>2014-05-31T14:54:02+01:00</updated>
-    <id>http://qgrosperrin.github.io/blog/2014/05/31/test</id>
+    <title type="html"><![CDATA[Title of the Post]]></title>
+    <link href="http://qgrosperrin.github.io/blog/2014/05/31/title-of-the-post/"/>
+    <updated>2014-05-31T15:06:53+01:00</updated>
+    <id>http://qgrosperrin.github.io/blog/2014/05/31/title-of-the-post</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
