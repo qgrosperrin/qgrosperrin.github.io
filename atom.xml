@@ -4,7 +4,7 @@
   <title><![CDATA[MooawR]]></title>
   <link href="http://qgrosperrin.github.io/atom.xml" rel="self"/>
   <link href="http://qgrosperrin.github.io/"/>
-  <updated>2014-09-29T10:42:36+01:00</updated>
+  <updated>2014-09-29T17:44:00+01:00</updated>
   <id>http://qgrosperrin.github.io/</id>
   <author>
     <name><![CDATA[qgrosperrin]]></name>
@@ -20,7 +20,7 @@
     <id>http://qgrosperrin.github.io/blog/2014/09/29/nmap-me</id>
     <content type="html"><![CDATA[<p><strong>Y U MAD BRO ?!</strong></p>
 
-<p>Ever went nuts when your <code>nmap</code> scan running for you on a /24 subnet (or bigger) would just crash ? Then this post is for you&#8230;</p>
+<p>Ever went nuts when your <code>nmap</code> scan running for you on a /24 subnet (or bigger) would just crash, or are you just feeling like you are spending too much time writing nmap commands ? Then this post is for you&#8230;</p>
 
 <p>I recently built a quick script out of the frustration of repeatedly creating <code>nmap</code> scans that wouldn&#8217;t scale easily for big target network ranges. It&#8217;s available on <a href="https://github.com/qgrosperrin/nmap-me">GitHub</a>.</p>
 
