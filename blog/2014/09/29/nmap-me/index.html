@@ -150,23 +150,33 @@
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> NmapMe (v 0.1) 
-</span><span class='line'> USAGE: ./nmap_me.sh -s [SIZE] -t [TARGET] -m [NB_SCANS] -n [NMAP_ARGS]
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> NmapMe (v 0.1b) 
+</span><span class='line'> USAGE: ./nmap_me.sh -t [TARGET] [OPTIONAL_ARGUMENTS]                                                               
 </span><span class='line'>
-</span><span class='line'> REQUIRED                                           
-</span><span class='line'>         -t  Target IP range.                
+</span><span class='line'> REQUIRED                                             
+</span><span class='line'>         -t [TARGET]      Target IP range.            
 </span><span class='line'>                                           
 </span><span class='line'> OPTIONAL                                           
-</span><span class='line'>         -s  Divide scans into chunk of maximum size specified. 
-</span><span class='line'>         -m  Maximum number of simultaneous scans.              
-</span><span class='line'>         -n  Additional nmap arguments. Use surrounding quotes (").
-</span><span class='line'>             Default options include: -sS/-sU, -v, -n, --open</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>         -s [SIZE]        Divide scans into chunk of maximum size specified. 
+</span><span class='line'>         -m [MAX_SCANS]   Maximum number of simultaneous scans.              
+</span><span class='line'>         -n [NMAP_ARGS]   Additional nmap arguments. Use surrounding quotes (").     
+</span><span class='line'>                          Hardcoded options include: -v, --open. Both TCP and UDP  
+</span><span class='line'>                          scans will be run against the target range. 
+</span><span class='line'>         --tcp [TCP_FLAG] Change TCP scanning method. Uses nmap flags (e.g. '-sT'). 
+</span><span class='line'>                          Default is '-sS' (SYN scan). 
+</span><span class='line'>         -j, --join       Join created 'screen' session automatically. Will not 
+</span><span class='line'>                          work well if used with '-m' limitations.</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Standard nmap TCP command used by the script: <br/>
-<code>nmap -sS -v -n ${nmap_args} --open ${target_subrange} -oA tcp-${target_subrange}</code> <br/>
+<code>nmap -sS -v ${nmap_args} --open ${target_subrange} -oA tcp-${target_subrange}</code> <br/>
 Standard nmap UDP command used by the script: <br/>
-<code>nmap -sU -v -n ${nmap_args} --open ${target_subrange} -oA udp-${target_subrange}</code></p>
+<code>nmap -sU -v ${nmap_args} --open ${target_subrange} -oA udp-${target_subrange}</code></p>
 
 <p>Where <code>${nmap_args}</code> will be replaced by any additional <code>nmap</code> arguments specified using the &#8216;-n&#8217; option, and <code>${target_subrange}</code> will be replaced by a calculated subrange of the target specified in the CLI.</p>
 
