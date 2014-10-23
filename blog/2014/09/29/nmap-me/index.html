@@ -105,7 +105,7 @@
   
 
 
-<time datetime="2014-09-29T10:13:36+01:00" pubdate data-updated="true">Sep 29<span>th</span>, 2014</time>
+<time datetime="2014-09-29T05:13:36-04:00" pubdate data-updated="true">Sep 29<span>th</span>, 2014</time>
         
       </p>
     
@@ -155,22 +155,26 @@
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
 <span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> NmapMe (v 0.1b) 
-</span><span class='line'> USAGE: ./nmap_me.sh -t [TARGET] [OPTIONAL_ARGUMENTS]                                                               
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> NmapMe (v 0.1b)
+</span><span class='line'> USAGE: ./nmap_me.sh -t [TARGET] [OPTIONAL_ARGUMENTS]
 </span><span class='line'>
-</span><span class='line'> REQUIRED                                             
-</span><span class='line'>         -t [TARGET]      Target IP range.            
-</span><span class='line'>                                           
-</span><span class='line'> OPTIONAL                                           
-</span><span class='line'>         -s [SIZE]        Divide scans into chunk of maximum size specified. 
-</span><span class='line'>         -m [MAX_SCANS]   Maximum number of simultaneous scans.              
-</span><span class='line'>         -n [NMAP_ARGS]   Additional nmap arguments. Use surrounding quotes (").     
-</span><span class='line'>                          Hardcoded options include: -v, --open. Both TCP and UDP  
-</span><span class='line'>                          scans will be run against the target range. 
-</span><span class='line'>         --tcp [TCP_FLAG] Change TCP scanning method. Uses nmap flags (e.g. '-sT'). 
-</span><span class='line'>                          Default is '-sS' (SYN scan). 
-</span><span class='line'>         -j, --join       Join created 'screen' session automatically. Will not 
-</span><span class='line'>                          work well if used with '-m' limitations.</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'> REQUIRED
+</span><span class='line'>         -t [TARGET]             Target IP range.
+</span><span class='line'>     OR
+</span><span class='line'>         -iL [TARGET_FILE]       Use a list of target IP ranges (similar to nmap option).
+</span><span class='line'>
+</span><span class='line'> OPTIONAL
+</span><span class='line'>         -s [SIZE]               Divide scans into chunk of maximum size specified.
+</span><span class='line'>         -m [MAX_SCANS]          Maximum number of simultaneous scans.
+</span><span class='line'>         -n [NMAP_ARGS]          Additional nmap arguments. Use surrounding quotes (").
+</span><span class='line'>                                 Hardcoded options include: -v, --open. Both TCP and UDP
+</span><span class='line'>                                 scans will be run against the target range.
+</span><span class='line'>         --tcp-flag [TCP_FLAG]   Change TCP scanning method. Uses nmap flags (e.g. '-sT').
+</span><span class='line'>                                 Default is '-sS' (SYN scan).
+</span><span class='line'>         --no-tcp                Do not run TCP scans.
+</span><span class='line'>         --no-udp                Do not run UDP scans.</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Standard nmap TCP command used by the script: <br/>
@@ -287,7 +291,7 @@ Standard nmap UDP command used by the script: <br/>
   
 
 
-<time datetime="2014-09-29T10:13:36+01:00" pubdate data-updated="true">Sep 29<span>th</span>, 2014</time>
+<time datetime="2014-09-29T05:13:36-04:00" pubdate data-updated="true">Sep 29<span>th</span>, 2014</time>
       
 
 
